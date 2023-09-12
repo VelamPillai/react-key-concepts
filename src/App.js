@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import keyConceptsImage from './assets/images/key-concepts.png';
+import concepts from "../src/assets/data/concepts.js";
+import ConceptCard from './components/ConceptCard.js';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div>
+      <header>
+        <img src={keyConceptsImage} alt="Medal badge with a star" />
+        <h1>Key React Concepts</h1>
+        <p>Selected key React concepts you should know about</p>
       </header>
+      <ConceptCard concepts = {concepts} />
+      
     </div>
   );
 }
