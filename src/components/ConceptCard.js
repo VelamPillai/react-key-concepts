@@ -6,8 +6,8 @@ function ConceptCard({concepts}) {
               {
                   concepts.map((item, idx) => {
                       return (
-                        <li className="concept">
-                          <img src={item.image} alt="TODO: TITLE" />
+                        <li className="concept" key={idx}>
+                          <img src={item.image} alt="pic-concepts" />
                               <h2>{ item.title}</h2>
                               <p>{ item.description}</p>
                         </li>
